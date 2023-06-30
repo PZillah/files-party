@@ -19,14 +19,15 @@ def get_stats(list):
    print("Median: ", statistics.median(list))
    print("STD:    ", statistics.stdev(list))
 
-def show_stats():
-    print("Fall 2016:")
+def show_stats(year):
+    print("Fall", year, ":")
     get_stats(fall)
     print()
-    print("Spring 2016:")
+    print("Spring", year, ":")
     get_stats(spring)
 
 # Data variables
+year = ""
 spring = []
 fall = []
 
@@ -53,4 +54,4 @@ file.close()
 # print("Spring 2016:")
 # get_stats(spring)
 
-show_stats()
+show_stats("2016")
