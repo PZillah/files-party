@@ -2,7 +2,7 @@
 #and then repeatedly asks the user to enter a number, entering the number ‘0’ when finished. 
 # Output each of these numbers to the file on a separate line.
 
-outFileName = input("What is the name of your output file? ")
+outFileName = input("Please enter a file name: ")
 user_input = input("Please enter a number. Enter 0 when done: ")
 dataFile = open(outFileName, "w") # create a new file to write on
 
