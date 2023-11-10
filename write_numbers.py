@@ -9,6 +9,17 @@ dataFile = open(outFileName, "w") # create a new file to write on
 while user_input != "0": # use while loop b/c i don't know when user input will end.
     print(user_input, file=dataFile) #file= (file destination)
     user_input = input("Please enter a number. Enter 0 when done: ") 
-    # re-evaluate (assign each new) input to the same variable so it can be reused
+    # re-evaluate (assign) each new input to the same variable so it can be reused
 
 dataFile.close()
+
+
+# outputFileName = input("What is the name of your file? ")
+# dataFile = open(outputFileName, "w")
+# prompt = "Please enter a number. (0 to finish) "
+# response = eval(input(prompt))
+# while response != 0:
+#     print(response, file=dataFile)
+#     response = eval(input(prompt))
+
+# dataFile.close()
